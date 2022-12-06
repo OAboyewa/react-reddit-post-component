@@ -1,4 +1,4 @@
-import '../componets/tag.css';
+import '../assets/styles/tag.css';
 
 function Tag(props) {
     return (
