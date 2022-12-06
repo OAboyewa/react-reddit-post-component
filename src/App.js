@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import './logo.svg';
 import './App.css';
+import Tag from './componets/tag';
+import Gallery from './componets/gallery';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div>
+      {/*Left*/}
+      <div>
+
+      </div>
+      {/*Right*/}
+      <div>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <img src='./logo.svg' />
+          <strong><a href='#'>r/blender</a> </strong>
+          . Posted by 
+          <span> <a href='#'>u/bestrizz123</a></span>
+          1 day ago
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <p>
+          I model simple objects for practice, tried my best for a clean topology.
+        </p>
+        <Tag href='#' text='Need Feedback' color='rgb(255, 69, 0)' />
+        <Gallery />
+      </div>
     </div>
   );
 }
